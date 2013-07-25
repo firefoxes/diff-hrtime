@@ -1,17 +1,3 @@
-// Every tick of the event loop, print (roughly) the number of nanoseconds that
-// have occurred since the last tick. Stop at 100 ticks.
-
-var tickCount = 0
-var lastTickAt = process.hrtime()
-
-function ticker() {
-  if (tickCount > 100) return
-  tickCount += 1
-  var now = process.hrtime()
-  console.log("tick: ", tickCount, ", delta: ", diffHrtime(lastTickAt, now)[1], "ns")
-  lastTickAt = now
-  process.nextTick(ticker)
-}
 
 function diffHrtime(b, a){
   // desctructure/capture secs and nanosecs
@@ -26,7 +12,6 @@ function diffHrtime(b, a){
   return [s, ns]
 }
 
-ticker()
 
 // // diffHrtime tests
 // var assert = require('assert')
