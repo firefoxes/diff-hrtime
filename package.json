@@ -1,9 +1,13 @@
 {
-  "name": "diffHrtime",
-  "author": "the firefoxes",
+  "name": "diff-hrtime",
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/firefoxes/diffHrtime.git"
-  }
+    "url": "https://github.com/firefoxes/diff-hrtime.git"
+  },
+  "description": "Computes the difference between two process.hrtime [sec, nanosec] pairs",
+  "keywords": ["time", "hrtime", "benchmark"],
+  "license": "BSD",
+  "engines": ">= 0.8",
+  "test": "node index.js"
 }
