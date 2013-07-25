@@ -1,5 +1,5 @@
 
-function diffHrtime(b, a){
+var diffHrtime =  function(b, a){
   // desctructure/capture secs and nanosecs
   var as = a[0], ans = a[1],
       bs = b[0], bns = b[1],
@@ -12,6 +12,7 @@ function diffHrtime(b, a){
   return [s, ns]
 }
 
+module.exports = diffHrtime
 
 // // diffHrtime tests
 // var assert = require('assert')
