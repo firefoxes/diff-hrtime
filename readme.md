@@ -5,9 +5,10 @@ Calculating the difference between two hrtime[sec, nanosec] pair structures.
 #Installation
 ```npm install diff-hrtime --save```
 
-#usage
+#Usage
 ```diff-hrtime``` receives 2 hrtime arrays [seconds, nanoseconds] and returns a relative time in the same previous form.
 
+es6 example
 ```javascript
 import diffHrtime from 'diff-hrtime';
 
